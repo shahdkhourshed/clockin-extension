@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ClockIn",
+  "description": "Block distractions, manage tasks, and focus.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"]
+}
