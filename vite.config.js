@@ -11,7 +11,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html')
+        dashboard: resolve(__dirname, 'public/dashboard.html'),
+        popup: resolve(__dirname, 'public/popup.html'),
       }
     },
     outDir: 'dist'
